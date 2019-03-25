@@ -1,0 +1,17 @@
+<div class="sisalto">
+  <div class="otsikko">
+    <h1>
+      Hello There!
+    </h1>
+</div>
+
+  <div class="content"  *ngIf="latausInfo == false; else secondMsg">
+    <p> This is my short demo to fetch newest tweets of your favorite subjects</p>
+  </div>
+
+  <ng-template #secondMsg>
+  <div class="content">
+    <p>It ain't much, but it's hones work and lot's of learning has happen!</p>
+  </div>
+</ng-template>
+</div>

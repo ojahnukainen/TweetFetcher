@@ -1,0 +1,86 @@
+@import "~@material/animation/functions";
+
+@keyframes fade-in {
+  from {
+  transform: translateY(-80);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main{
+  display: flex;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content{
+  animation: mdc-animation-standard(/* $name: */ fade-in, /* $duration: */ 450ms);
+  position: absolute;
+  color: darkorange;
+  font-size: 25px;
+  padding-top: 250px;
+  padding-left: 35%;
+  padding-right: 10%;
+}
+mat-card{
+  background: rgba(0, 0, 0, 0.84);
+  color: white;
+  height: 100px;
+}
+
+mat-card-header{
+  padding-top: 30px;
+}
+.mat-form-field-flex{
+  padding-top: 30px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+mat-chip-list{
+  margin:auto;
+  width: 50%;
+  height: 20%;
+}
+mat-grid-tile {
+  background: #5fb9ff;
+  margin:auto;
+  width: 50%;
+}
+
+mat-grid-tile-header {
+  display: flex;
+  background: #50ceff;
+  margin:auto;
+  height: 35px;
+  font-size: small;
+}
+mat-chip-list{
+  width: 300px;
+  margin: auto;
+}
+mat-grid-list{
+  width: 60%;
+  margin:auto;
+}
+mat-form-field {
+  width: 100%;
+  align-content: center;
+
+}
+
+.tweetCard {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 20px;
+  align-content: center;
+  animation: mdc-animation-enter(/* $name: */
+      fade-in, /* $duration: */
+      550ms);
+}
